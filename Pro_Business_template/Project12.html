@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flyer</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@100&display=swap');
+
+    body {
+        margin: 0px;
+        padding: 0px;
+        background-color: gray;
+        display: flex;
+        justify-content: center;
+    }
+
+    #maincon {
+        background: linear-gradient(90deg, rgba(248, 193, 28, 1) 0%, rgba(242, 156, 17, 1) 100%);
+        border: 2px black solid;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 85vh;
+        height: 90vh;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+
+    #lside {
+        width: 33vh;
+        align-content: center;
+        margin-top: 25vh;
+        margin-bottom: 25vh;
+        margin-left: 2vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #table1,
+    #table2 {
+        width: 56%;
+        font-family: 'Barlow', sans-serif;
+        font-size: 2vh;
+        font-weight: bold;
+        opacity: 70%;
+    }
+
+    .span0,
+    table {
+        margin-left: 4%;
+        margin-bottom: 8%;
+    }
+
+    #span1 {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 3.2vh;
+        font-weight: bold;
+    }
+
+    #span2 {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: bold;
+        font-size: 6.5vh;
+    }
+
+    #span3 {
+        font-family: 'Barlow', sans-serif;
+        font-size: 2.5vh;
+        letter-spacing: 0.1vh;
+    }
+
+    #span4 {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: bold;
+        font-size: 3.5vh;
+    }
+
+    .lsidelogo {
+        height: 5vh;
+        width: 5vh;
+    }
+
+    table {
+        width: 15px;
+
+    }
+
+    #rside {
+
+        box-shadow: -2px 5px 46px -6px rgba(0, 0, 0, 0.75);
+        background-color: rgb(15, 33, 49);
+        width: 66vh;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        margin-right: 3.5vh;
+    }
+
+    #logotable {
+        width: 15vh;
+        height: 5vh;
+        position: relative;
+        top: 2vh;
+        left: -3vh;
+        color: white;
+        font-weight: bold;
+        font-size: 3vh;
+        font-family: 'Barlow Condensed', sans-serif;
+
+    }
+
+    #logo {
+        width: 7vh;
+        height: 5vh;
+    }
+
+    #circleimg {
+        border: 1.4vh solid #f8c11c;
+        background-image: url(pic.jpg);
+        background-size: cover;
+        border-radius: 50%;
+        height: 30vh;
+        width: 30vh;
+        position: relative;
+        left: 15vh;
+        top: -9vh;
+    }
+
+    #main2 {
+
+        height: 40vh;
+        width: 100%;
+        margin-top: -13vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        position: relative;
+
+    }
+
+    #ls {
+
+        height: 90%;
+        width: 43%;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        justify-content: space-evenly;
+    }
+
+    #sp1 {
+        color: white;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 3.5vh;
+        font-weight: bold;
+
+    }
+
+    #sp2 {
+        color: #f8c11c;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 7.5vh;
+        font-weight: bold;
+        margin-top: -1.8vh;
+    }
+
+    #sp3 {
+        color: white;
+        font-family: sans-serif;
+        font-size: 2.4vh;
+        opacity: 80%;
+    }
+
+    .ul {
+        border-bottom: 0.7px solid #f8c11c;
+        padding-bottom: 0.3vh;
+    }
+
+    #sp4 {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 2.5vh;
+        margin-top: 1.5vh;
+        color: #f8c11c;
+    }
+
+    #sp5 {
+        font-size: 1.09vh;
+        text-align: justify;
+        color: rgba(255, 255, 255, 0.584);
+    }
+
+    .ticklogo {
+        height: 2vh;
+        width: 2vh;
+    }
+
+    #table3 {
+        font-size: 1.09vh;
+        width: auto;
+        margin-left: -0.6vh;
+    }
+
+    .op,
+    .ticklogo {
+        margin-bottom: -0.9vh;
+    }
+
+    .op {
+        color: rgba(255, 255, 255, 0.584);
+    }
+
+    #rs {
+
+        height: 75%;
+        width: 43%;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        justify-content: space-evenly;
+        margin-top: 10vh;
+    }
+
+    #l1 {
+        color: white;
+        font-size: 2vh;
+        font-family: 'Barlow', sans-serif;
+        font-weight: bold;
+    }
+
+    #l2 {
+        font-size: 2.5vh;
+        color: #f8c11c;
+        font-weight: bold;
+        font-family: 'Barlow Condensed', sans-serif;
+    }
+
+    #l3 {
+        color: #f8c11c;
+        font-weight: bold;
+        opacity: 90%;
+        font-size: 2vh;
+        font-family: 'Barlow', sans-serif;
+    }
+
+    #l4 {
+        font-size: 2vh;
+        font-weight: bold;
+        font-family: 'Barlow Condensed', sans-serif;
+        letter-spacing: 0.1vh;
+    }
+
+    .table4 {
+        font-size: 1.09vh;
+        width: auto;
+        margin-left: -0.6vh;
+        margin-top: 1vh;
+        margin-bottom: 0.5vh;
+    }
+
+    .biglogo {
+        height: 3vh;
+        width: 3vh;
+        background-color: #f8c11c;
+        border: 1px solid #f8c11c;
+        border-radius: 50%;
+    }
+
+    .heading {
+        font-weight: bolder;
+        color: #dbb749;
+    }
+
+    .biglogo,
+    .heading {
+        margin-bottom: -0.9vh;
+    }
+
+    .text {
+        color: rgba(255, 255, 255, 0.584);
+    }
+
+    #footer {
+
+        width: 65.3%;
+        height: 6.6vh;
+        margin-left: 30%;
+        margin-top: 2vh;
+
+    }
+
+    #footspan1 {
+        font-size: 2vh;
+        font-weight: bold;
+        font-family: 'Barlow Condensed', sans-serif;
+        color: #dbb749;
+        display: flex;
+    }
+
+    #d2 {
+        font-size: 1vh;
+        margin-top: 1vh;
+    }
+
+    #footspan2 {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        font-size: 1.1vh;
+        color: rgba(255, 255, 255, 0.584);
+        justify-content: space-between;
+
+        margin-top: 1vh;
+    }
+
+    .footlogo {
+        height: 1vh;
+        width: 1vh;
+        margin-right: 0.2vh;
+    }
+            #clip
+        {
+            background: linear-gradient(0deg, rgba(217,150,17,1) 4%, rgba(248,193,28,1) 84%);
+            height: 16vh;
+            width: 14vh;
+            position: relative;
+            top: -14.8vh;
+            z-index: 1;
+            clip-path: polygon(0 0%, 100% 80%, 55% 100%, 0% 100%);
+        }
+        #digonals
+        {
+            height: 50vh;
+            width: 53vh;
+            position: absolute;
+            top: 10.2vh;
+        }
+        #budigonal
+                {
+                    background: linear-gradient(0deg, rgba(248,193,28,1) 30%, rgba(217,150,17,1) 89%);                    height: 20vh;
+                    width: 20vh;
+                    position: relative;
+                    left: 33vh;
+                    clip-path: polygon(100% 0%, 100% 38%, 40% 100%, -40% 78%, 47% 0);
+                }
+        #tddigonal
+        {
+
+            background: linear-gradient(0deg, rgba(248,193,28,1) 30%, rgba(217,150,17,1) 89%);            height: 30vh;
+            width: 20vh;
+            position: relative;
+            left: 33vh;
+            clip-path: polygon(0 -20%, 100% 28%, 100% 95%,0% 40%);
+
+        }
+</style>
+
+<body>
+    <div id="maincon">
+        <div id="lside">
+            <span class="span0">
+                <span id="span1">CREATIVE</span>
+                <span id="span2">BUSINESS</span>
+                <span id="span3">FLYER TEMPLATE</span>
+            </span>
+            <table id="table1">
+                <tr>
+                    <td>
+                        <img src="edit.png" alt="editlogo" class="lsidelogo">
+                    </td>
+                    <td>
+                        FULLY <BR>EDITABLE
+                    </td>
+                </tr>
+            </table>
+            <table id="table2">
+                <tr>
+                    <td>
+                        <img src="print ready.png" alt="editlogo" class="lsidelogo">
+                    </td>
+                    <td>
+                        PRINT <BR>READY
+                    </td>
+                </tr>
+
+            </table>
+            <span class="span0" id="span4">Image Not Included</span>
+        </div>
+        <div id="rside">
+            <table id="logotable">
+                <tr>
+                    <td><img src="logo.png" alt="logo" id="logo"></td>
+                    <td>LOGO</td>
+                </tr>
+            </table>
+       
+        
+            <div id="digonals">
+                <div id="budigonal">
+
+                </div>
+                <div id="tddigonal">
+                    
+                </div>
+            </div>
+
+
+
+
+            
+            <div id="circleimg">
+            </div>
+            <div id="main2">
+                <div id="ls">
+                    <span id="sp1">TAKE EVERY</span>
+                    <span id="sp2">CHANCE.</span>
+                    <span id="sp3"><span class="ul">DR</span>OP EVERY FEAR</span>
+                    <span id="sp4">About Us</span>
+                    <span id="sp5">Lorem, ipsum dolor sit amet consectetur adipisicing elit, sed do elusmod tempor
+                        incididunt ut labor et dolore magna aliqua.
+                    </span>
+                    <span id="sp6">
+                        <table id="table3" cellspacing="0.01vh">
+                            <tr>
+                                <td><img src="check.png" alt="tick" class="ticklogo"></td>
+                                <td class="op">Lorem ipsum dolor sit amet.</td>
+                            </tr>
+                            <tr>
+                                <td><img src="check.png" alt="tick" class="ticklogo"></td>
+                                <td class="op">Consectetur adipiscing elit.</td>
+                            </tr>
+                            <tr>
+                                <td><img src="check.png" alt="tick" class="ticklogo"></td>
+                                <td class="op">Sed do elusmod tempor incididunt.</td>
+                            </tr>
+                        </table>
+                    </span>
+                </div>
+                <div id="rs">
+                    <span id="l1">Provideing</span>
+                    <span id="l2">A Range of</span>
+                    <span id="l3">Commercial &</span>
+                    <span id="l4"><span class="ul">Res</span>idential Services</span>
+                    <span id="l5">
+                        <table class="table4" cellspacing="0.1vh">
+                            <tr>
+                                <tr>
+                                    <td rowspan="2"><img src="idea.png" alt="" class="biglogo"></td>
+                                    <td class="heading">Creative Idea</td>
+                                <tr>
+                                    <td class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
+                                </tr>
+
+      
+                                </tr>
+                            </tr>
+                        </table>
+                        <table class="table4" cellspacing="0.1vh">
+                            <tr>
+                            <tr>
+                                <td rowspan="2"><img src="dmar.png" alt="" class="biglogo"></td>
+                                <td class="heading">Digital Marketing</td>
+                            <tr>
+                                <td class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
+                            </tr>
+
+                            </tr>
+                            </tr>
+                        </table>
+                        <table class="table4" cellspacing="0.1vh">
+                            <tr>
+                            <tr>
+                                <td rowspan="2"><img src="budev.png" alt="" class="biglogo"></td>
+                                <td class="heading">Business Development</td>
+                            <tr>
+                                <td class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
+                            </tr>
+
+                            </tr>
+                            </tr>
+                        </table>
+                    </span>
+                </div>
+            </div>
+
+            <div id="footer">
+                <div id="footspan1">
+                    <div id="d1">Contact Now : </div>
+                    <div id="d2" style="letter-spacing: -0.1vh;">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;__________________________________________________________________________
+                    </div>
+                </div>
+                <span id="footspan2">
+                    <li><img src="call.png" alt="calllogo" class="footlogo">+1 999 999 999</li>
+                    <li><img src="mail.png" alt="maillogo" class="footlogo">idname123@email.com</li>
+                    <li><img src="web.png" alt="weblogo" class="footlogo">www.websitename.com</li>
+                </span>
+            </div>
+                    <div id="clip">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
